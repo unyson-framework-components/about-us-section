@@ -1,0 +1,58 @@
+.team-member-list {
+  li:before {
+    list-style: none;
+    display: none;
+  }
+}
+
+.team-member {
+  &__info-block {
+    position: relative;
+  }
+
+  &__img-wrap {
+    display: block;
+    position: relative;
+    width: 230px;
+    height: 230px;
+
+    @media (min-width: $screen-sm) {
+      width: 290px;
+      height: 290px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 310px;
+      height: 310px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 350px;
+      height: 350px;
+    }
+
+    svg {
+      width: 100%;
+
+      image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  &__meta {
+    position: absolute;
+    z-index: 2;
+    width: 65%;
+    left: 35%;
+    top: 65%;
+    color: $text-color-default;
+    text-align: left;
+  }
+}
